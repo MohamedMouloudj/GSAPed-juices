@@ -5,6 +5,7 @@ import { PixiPlugin } from "gsap/PixiPlugin";
 import Navbar from "./components/Navbar.tsx";
 import Hero from "./components/Hero.tsx";
 import Juices from "./components/Juices.tsx";
+import About from "./components/About.tsx";
 
 gsap.registerPlugin(ScrollTrigger, SplitText, PixiPlugin);
 PixiPlugin.registerPIXI(PIXI);
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Hero />
       <Juices />
+      <About />
     </main>
   );
 }

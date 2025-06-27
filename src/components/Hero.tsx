@@ -48,6 +48,7 @@ function Hero() {
         },
         0,
       );
+
     const startValue = isMobile ? "top 50%" : "center 60%";
     const endValue = isMobile ? "150% top" : "bottom top";
 
