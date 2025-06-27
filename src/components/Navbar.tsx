@@ -8,25 +8,33 @@ function Navbar() {
       scrollTrigger: {
         trigger: "nav",
         start: "bottom top",
-        scrub: true,
-        markers: true,
+        scrub: 0.5,
       },
     });
     navTween.fromTo(
       "nav",
-      { backgroundColor: "transparent" },
       {
-        backgroundColor: "#00000050",
-        backgroundFilter: "blur(10px)",
-        ease: "power1.inOut",
+        backgroundColor: "transparent",
+        pixi: {
+          blur: 0,
+        },
+        boxShadow: "none",
+      },
+      {
+        backgroundColor: "rgba(255,255,255,0.6)",
+        pixi: {
+          blur: 10,
+        },
+        boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
         duration: 1,
+        ease: "power1.inOut",
       },
     );
   });
   return (
     <nav>
       <div>
-        <a href="#home" className="flex items-center gap-2">
+        <a href="#hero" className="flex items-center gap-2">
           <img src="./images/logo.png" alt="Logo" className="w-8 h-8" />
           <p>Juicy Exhibition</p>
         </a>

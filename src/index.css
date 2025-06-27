@@ -8,7 +8,7 @@
 }
 
 @theme {
-    --color-green:       #185d27;
+    --color-green:       #1f7931;
     --color-white-100:   #efefef;
     --font-sans:         "Mona Sans", sans-serif;
     --font-modern-negra: "Modern Negra", sans-serif;
@@ -76,7 +76,7 @@ body {
         }
 
         a {
-            @apply cursor-pointer text-nowrap md:text-lg text-base;
+            @apply cursor-pointer text-nowrap md:text-lg text-base font-medium;
         }
 
         ul {
@@ -85,7 +85,7 @@ body {
     }
 
     .noisy {
-        @apply absolute inset-0 size-full bg-[url("/images/noise.jpg")];
+        @apply absolute inset-0 size-full bg-[url("/images/noise.png")];
     }
 
     #hero {
@@ -140,11 +140,11 @@ body {
         @apply relative min-h-dvh w-full overflow-hidden;
 
         #c-left-leaf {
-            @apply absolute left-0 md:bottom-0 md:top-auto -top-20 md:w-fit w-1/3;
+            @apply absolute left-0 bottom-0 top-auto md:w-fit w-1/3;
         }
 
         #c-right-leaf {
-            @apply absolute right-0 md:bottom-0 md:top-auto -top-20 md:w-fit w-1/3;
+            @apply absolute right-0 bottom-0 top-auto md:w-fit w-1/3;
         }
 
         .list {
