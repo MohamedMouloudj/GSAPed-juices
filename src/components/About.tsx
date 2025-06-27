@@ -1,7 +1,7 @@
 import gsap from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
-import { featureLists } from "../../constants";
+import { featureLists, profileLists } from "../../constants";
 import { Check } from "lucide-react";
 
 function About() {
@@ -51,11 +51,32 @@ function About() {
               what turns a simple drink into something truly memorable.{" "}
             </p>
 
-            <div>
-              <p className="md:text-3xl text-xl font-bold">
-                <span>4.5</span>/5
-              </p>
-              <p className="text-sm text-black">More that +12k customers</p>
+            <div className="flex flex-row items-center justify-around">
+              <div>
+                <p className="md:text-3xl text-xl font-bold">
+                  <span>4.5</span>/5
+                </p>
+                <p className="text-sm text-black">More that +12k customers</p>
+              </div>
+              <div className=" border-2 border-gray-400 h-full " />
+              <div className="flex flex-row items-center bg-neutral-200 p-2 rounded-full">
+                {profileLists.map((profile, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center"
+                    style={{
+                      marginLeft: i > 0 ? "-15px" : "0",
+                      zIndex: profileLists.length + i,
+                    }}
+                  >
+                    <img
+                      src={profile.imgPath}
+                      alt={"profile " + i}
+                      className="w-8 h-8 rounded-full border-2 border-black"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
