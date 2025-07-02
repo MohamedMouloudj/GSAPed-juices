@@ -3,6 +3,8 @@
 A fully animated React application built with GSAP, showcasing a vibrant and interactive juice exhibition.
 Designed to captivate users with smooth motion and refreshing visuals.
 
+🌐 [Live Demo](https://gsaped-juices.netlify.app/)
+
 ## Features
 
 - 🎨 Modern, responsive design
