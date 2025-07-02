@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 function Juices() {
-  useGSAP((context) => {
+  useGSAP(() => {
     const parallaxTimeline = gsap.timeline({
       scrollTrigger: {
         trigger: "#juices",
@@ -20,7 +20,6 @@ function Juices() {
       x: 100,
       y: 100,
     });
-    console.log(context.data.length);
   }, []);
   return (
     <section id="juices" className="noisy">
