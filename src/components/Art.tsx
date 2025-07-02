@@ -54,7 +54,7 @@ function Art() {
             <img
               src="/images/under-img.jpg"
               alt="juice"
-              className="abs-center masked-img size-full object-contain"
+              className="abs-center masked-img size-full object-contain object-center"
             />
           </div>
           <ul className="space-y-4 will-fade">

@@ -7,7 +7,7 @@ function Navbar() {
     const navTween = gsap.timeline({
       scrollTrigger: {
         trigger: "nav",
-        start: "bottom top",
+        start: "center top",
         scrub: 0.5,
       },
     });

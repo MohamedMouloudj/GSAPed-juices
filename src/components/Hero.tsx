@@ -50,7 +50,7 @@ function Hero() {
       );
 
     const startValue = isMobile ? "top 50%" : "center 60%";
-    const endValue = isMobile ? "150% top" : "bottom top";
+    const endValue = isMobile ? "190% top" : "bottom top";
 
     const tl = gsap.timeline({
       scrollTrigger: {
