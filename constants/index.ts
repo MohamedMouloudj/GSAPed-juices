@@ -1,6 +1,12 @@
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+
 const navLinks = [
   {
-    id: "juice",
+    id: "menu",
     title: "Juices",
   },
   {
@@ -8,7 +14,7 @@ const navLinks = [
     title: "About Us",
   },
   {
-    id: "work",
+    id: "art",
     title: "The Art",
   },
   {
@@ -116,18 +122,18 @@ const openingHours = [
 const socials = [
   {
     name: "Instagram",
-    icon: "/images/insta.png",
-    url: "#",
+    url: "https://www.instagram.com/mohamed_j_4/",
+    icon: faInstagram,
   },
   {
-    name: "X (Twitter)",
-    icon: "/images/x.png",
-    url: "#",
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/mohamed-mouloudj-547020247",
+    icon: faLinkedin,
   },
   {
-    name: "Facebook",
-    icon: "/images/fb.png",
-    url: "#",
+    name: "github",
+    url: "https://github.com/MohamedMouloudj",
+    icon: faGithub,
   },
 ];
 

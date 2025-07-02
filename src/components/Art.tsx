@@ -27,6 +27,7 @@ function Art() {
         scale: 1.3,
         maskPosition: "center",
         maskSize: "400%",
+        duration: 4,
         ease: "power1.inOut",
       })
       .to("#masked-content", {
@@ -37,7 +38,7 @@ function Art() {
       });
   });
   return (
-    <div id="art">
+    <section id="art">
       <div className="container mx-auto h-full pt-20">
         <h2 className="will-fade">THE ART</h2>
         <div className="content">
@@ -49,7 +50,7 @@ function Art() {
               </li>
             ))}
           </ul>
-          <div className="cocktail-img">
+          <div className="juice-img">
             <img
               src="/images/under-img.jpg"
               alt="juice"
@@ -70,14 +71,14 @@ function Art() {
           <div id="masked-content" className="will-fade">
             <h3>Made with Craft - Poured with Passion</h3>
             <p>
-              This isn't just a drink; it's an experience. Each cocktail is a
+              This isn't just a drink; it's an experience. Each juice is a
               masterpiece, crafted with the finest ingredients and a touch of
               artistry.
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

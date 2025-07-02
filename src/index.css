@@ -8,7 +8,7 @@
 }
 
 @theme {
-    --color-green:       #1f7931;
+    --color-green:       #249d3c;
     --color-white-100:   #efefef;
     --font-sans:         "Mona Sans", sans-serif;
     --font-modern-negra: "Modern Negra", sans-serif;
@@ -22,6 +22,11 @@ body {
     color: black;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    scroll-padding-top: 5vh;
+}
+*::selection{
+    background-color: var(--color-green);
+    color: var(--color-white-100);
 }
 
 @utility flex-center {
@@ -61,7 +66,7 @@ body {
 
 @layer components {
     main {
-        @apply w-full overflow-x-hidden;
+        @apply w-full overflow-hidden;
     }
 
     nav {
@@ -251,8 +256,8 @@ body {
             @apply flex md:flex-row flex-col justify-between md:mb-16 md:mt-0 mt-40 gap-10;
         }
 
-        .cocktail-img {
-            @apply  w-full md:w-[40vw] lg:w-[70vw] h-[25vh] md:h-[40vh] lg:h-[60vh] rounded-4xl overflow-hidden absolute top-0 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2;
+        .juice-img {
+            @apply  w-full md:w-[60vw] lg:w-[60vw] h-[25vh] sm:h-[30vh] lg:h-[50vh] rounded-4xl overflow-hidden absolute top-0 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2;
         }
 
         .masked-container {
@@ -285,7 +290,7 @@ body {
             @apply object-contain absolute -top-40 right-0 md:w-fit w-1/4;
         }
 
-        .cocktail-tabs {
+        .juice-tabs {
             @apply grid md:grid-cols-4 grid-cols-2 md:gap-20 gap-10 sm:mb-32 mb-20 relative z-10 md:max-w-6xl md:mx-auto;
 
             button {
@@ -300,16 +305,16 @@ body {
                 @apply flex items-center justify-between w-full absolute;
 
                 button {
-                    @apply text-white hover:text-green cursor-pointer transition-colors max-w-36;
+                    @apply text-black hover:text-green cursor-pointer transition-colors max-w-36;
 
                     span {
-                        @apply text-3xl font-modern-negra leading-none hidden md:block;
+                        @apply text-3xl font-modern-negra leading-none hidden md:block text-shadow-md;
                     }
                 }
             }
         }
 
-        .cocktail {
+        .juice {
             @apply flex-center mt-10;
 
             img {
@@ -324,7 +329,7 @@ body {
                 @apply space-y-4 lg:translate-y-20;
 
                 #title {
-                    @apply font-modern-negra md:text-6xl text-3xl text-green max-w-40;
+                    @apply font-modern-negra md:text-6xl text-3xl text-green max-w-80 max-md:max-w-40 text-shadow-md;
                 }
             }
 

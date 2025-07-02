@@ -41,7 +41,7 @@ function Navbar() {
         <ul className="flex gap-4">
           {navLinks.map((link, index) => (
             <li key={index}>
-              <a href={link.id} className="hover:underline">
+              <a href={`#${link.id}`} className="hover:underline">
                 {link.title}
               </a>
             </li>
