@@ -1,6 +1,3 @@
-Based on your React/TypeScript project with GSAP animations, here's a comprehensive README file:
-
-```markdown
 # GSAPed-juices
 
 A fully animated React application built with GSAP, showcasing a vibrant and interactive juice exhibition.
@@ -88,4 +85,3 @@ This command:
 ## License
 
 This project is licensed under the MIT License.
-```
